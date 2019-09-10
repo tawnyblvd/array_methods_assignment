@@ -1,7 +1,12 @@
 // # Exercises
 //
 // 1. Given an array of numbers, write a function that returns a new array where every element is incremented by 10.
-//
+const plusTen = (arr) => {
+  arr.forEach(el => {
+  console.log(el + 10)});
+}
+
+plusTen([1,2,3,4,5]);
 // ```
 // Input: [1,2,3,4,5]
 // Output: [11,12,13,14,15]
@@ -14,6 +19,7 @@
 // Output: ["a", "", "b", "c", ""]
 // ```
 //
+// console.log(returnOnlyStrings(mixedArr));
 // 3. Write a function that returns only the even elements in an array of numbers.
 //
 // ```
@@ -37,7 +43,13 @@
 // Input: [1,2,3,4,5]
 // Output: 15
 // ```
-//
+
+// let sumArray = [1,2,3,4,5];
+// let sum = 0;
+// function sumArray(sumArray, sum) {
+//   return sumArray + sum;
+// }
+
 // 6. Write a function that finds largest number in an array.
 //
 // ```
@@ -66,7 +78,8 @@
 // Output: 20
 // ```
 //
-// 10. Write a function `elementDivisibleBy` with parameters `divisor` and `arr`.  Return a new array of every element of arr that can be evenly divided by divisor.
+// 10. Write a function `elementDivisibleBy` with parameters `divisor` and `arr`.
+// Return a new array of every element of arr that can be evenly divided by divisor.
 //
 // ```
 // Input: 5, [4,5,6,7,8,9,10,11,12,13,14,15]
@@ -80,7 +93,8 @@
 // Output: [0,7,16,27]
 // ```
 //
-// 12. Write a function that returns whether or not every value in an array is a positive even number that doesn't end in 0.
+// 12. Write a function that returns whether or not every value in an array is a
+// positive even number that doesn't end in 0.
 //
 // ```
 // Input: [2,4,6,8,12]
